@@ -31,7 +31,7 @@ RUN apt-get update && \
 RUN mv /usr/bin/qbittorrent-nox /usr/bin/qbittorrent
 
 COPY ./entrypoint.sh /entrypoint.sh
-COPY ./start.sh /start.sh
+RUN wget -O /start.sh https://raw.githubusercontent.com/Luxxy-GF/Luxxy-Eggs/main/qbittorrent/start.sh
 
 RUN chmod +x /start.sh
 
