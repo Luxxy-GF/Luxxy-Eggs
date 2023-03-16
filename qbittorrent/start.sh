@@ -1,1 +1,3 @@
-/usr/bin/qbittorrent --webui-port={{SERVER_PORT}}
+#!/bin/bash
+
+usr/bin/qbittorrent --webui-port={{SERVER_PORT}}
