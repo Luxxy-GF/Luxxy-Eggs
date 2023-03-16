@@ -30,7 +30,7 @@ RUN apt-get update && \
     apt-get install -y software-properties-common
 RUN mv /usr/bin/qbittorrent-nox /usr/bin/qbittorrent
 
-COPY ./entrypoint.sh /entrypoint.sh
+RUN wget -O /entrypoint.sh https://raw.githubusercontent.com/Luxxy-GF/Luxxy-Eggs/main/qbittorrent/entrypoint.sh
 RUN wget -O /start.sh https://raw.githubusercontent.com/Luxxy-GF/Luxxy-Eggs/main/qbittorrent/start.sh
 
 RUN chmod +x /start.sh
