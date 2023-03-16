@@ -13,8 +13,10 @@ on:
 jobs:
   qemu:
     runs-on: ubuntu-latest
-    matrix:
-      image:
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
         - 'qbittorrent'
     steps:
       -
